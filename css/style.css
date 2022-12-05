@@ -1,0 +1,70 @@
+.container {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.header__title {
+    text-align: center;
+}
+
+.game-section__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 150px;
+    background-color: rgb(9, 182, 87);
+    font-size: 60px;
+    border-radius: 30px;
+    transition: background-color .3s ease-in-out;
+    color: transparent;
+    cursor: pointer;
+}
+
+.card.open {
+    background-color: rgb(190, 9, 9);
+    color: black;
+}
+
+.card.success {
+    background-color: rgb(42, 9, 190);
+    color: black;
+}
+
+.btn-reset {
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.btn {
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+    border: 3px solid rgb(42, 9, 190);
+    padding: 20px;
+    border-radius: 30px;
+    font-size: 20px;
+    color: rgb(42, 9, 190);
+    cursor: pointer;
+    transition: .3s ease-in-out;
+    display: none;
+}
+
+.btn-newGame {
+    display: block;
+}
+
+.btn:hover {
+    background-color: rgb(45, 40, 68);
+    color: #FFFFFF;
+}
